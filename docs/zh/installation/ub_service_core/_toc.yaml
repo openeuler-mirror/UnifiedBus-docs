@@ -1,0 +1,12 @@
+label: ubs_service_core
+isManual: true
+descriptions: ubs_service_core tools installation docs
+sections:
+  - label: ubs-virt-ovs
+    href: ./ubs-virt-ovs_installation.md
+
+  - label: vCANN-RT
+    href: ./vCANN-RT_installation.md
+      
+  - label: virt-awaresched
+    href: ./virt-awaresched_installation.md

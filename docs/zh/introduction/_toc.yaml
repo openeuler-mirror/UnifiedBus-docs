@@ -1,0 +1,10 @@
+label: openEuler Opensource Documents
+sections: 
+  - label: 开源文档
+  - sections: 
+      - href: 
+          upstream: https://atomgit.com/openeuler/UnifiedBus-docs/docs/zh/_toc.yaml
+          path: ./patch_tracking
+  - label: ubs_service_core
+    sections: 
+      - href: ./ubs_service_core/_toc.yaml       
