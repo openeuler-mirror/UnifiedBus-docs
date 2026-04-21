@@ -1,6 +1,8 @@
 label: ubs_service_core
 isManual: true
-descriptions:ubs_service_core tools introduction docs
+descriptions: ubs_service_core tools introduction docs
 sections:
   - label: ubs-virt
     href: ./ubs-virt_introduction.md
+  - label: ubturbo
+    href: ./ubturbo_introduction.md

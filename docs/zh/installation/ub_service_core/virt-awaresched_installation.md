@@ -97,7 +97,7 @@ systemctl status vas-daemon
 
 出现如下返回信息，说明服务已正常启动。
 
-![服务正常启动](figures/服务正常启动.png "服务正常启动示例")
+![服务正常启动](figures/ubs-virt/服务正常启动.png "服务正常启动示例")
 
 如果服务启动失败, 请查看服务日志(默认路径: `/var/log/vas/vas.log`), 确认启动失败原因.
 

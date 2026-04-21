@@ -1,4 +1,6 @@
 label: 灵衢手册
+  - isManual: true
+  - description: 
 sections:
   - href: ./installation/_toc.yaml
   - href: ./introduction/_toc.yaml
