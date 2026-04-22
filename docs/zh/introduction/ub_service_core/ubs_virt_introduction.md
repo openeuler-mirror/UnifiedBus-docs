@@ -12,6 +12,6 @@
 
 ## 使用说明
 
-1. ubs-virt-ovs: [ubs-virt-ovs使用说明](../../installation/ub_service_core/ubs-virt-ovs_installation.md)
-2. ubs-virt-enpu: [ubs-virt-enpu使用说明](../../installation/ub_service_core/vCANN-RT_installation.md)
-3. virt-awaresched：[virt-awaresched使用说明](../../installation/ub_service_core/virt-awaresched_installation.md)
+1. ubs-virt-ovs: [ubs-virt-ovs使用说明](../../installation/ub_service_core/ubs_virt_ovs_installation.md)
+2. ubs-virt-enpu: [ubs-virt-enpu使用说明](../../installation/ub_service_core/vcann_rt_installation.md)
+3. virt-awaresched：[virt-awaresched使用说明](../../installation/ub_service_core/virt_awaresched_installation.md)
