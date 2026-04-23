@@ -7,7 +7,7 @@ UBS Memory是在超节点上基于底层UB Memory能力提供的高阶服务能�
 UBS Memory特性分为内存借用和内存共享两类，纵向层次分为应用层、UBSMEM-SDK层、UBSMEM-Daemon层以及底层外部依赖（包括HCOM、UBSE、OBMM等）。
 
 **图 1**  系统设计方案<a name="fig001"></a>  
-![](./figures/ubsm/系统设计方案.svg "figures/系统设计方案")
+![](./figures/ubsm/系统设计方案.svg "系统设计方案")
 
 - APP：应用层。
 - KSHMEM
@@ -29,11 +29,11 @@ UBS Memory特性分为内存借用和内存共享两类，纵向层次分为应�
 本机（使用方）借用其他服务器（提供方）的内存。使用方和提供方属于不同的服务器。
 
 **图 2**  内存借用<a name="fig002"></a>  
-![](./figures/ubsm/内存借用.svg "figures/内存借用")
+![](./figures/ubsm/内存借用.svg "内存借用")
 
 ## 内存共享
 
 创建方创建共享内存，写方写数据到共享内存，读方从共享内存读取数据。创建方、写方、读方可以由一个应用程序承担，也可以单独存在。
 
 **图 3**  内存共享<a name="fig003"></a>  
-![](./figures/ubsm/内存共享.svg "figures/内存共享")
+![](./figures/ubsm/内存共享.svg "内存共享")

@@ -2,8 +2,7 @@
 
 ## 约束限制
 
-鲲鹏基于ARM64架构，因此不做特殊说明，均默认为ARM64架构。
-
+- 如果不做特殊说明，均默认为ARM64架构。
 - Linux通用内存映射均是Cacheable属性映射内存，访存时内存会经过Cache。
 - 内核线性映射区支持BLOCK粒度（如PUD/PMD）和PAGE粒度的地址映射。使用BLOCK粒度有助于减少TLB miss，提升性能。但BLOCK与PAGE之间的映射粒度在系统启动后不可动态切换。若需修改BLOCK中某个单页（如4KB）的属性，理论上需将整个BLOCK拆分为PAGE粒度，并按照ARM规范中的BBM（Break-Before-Make）规则进行更新。然而，目前ARM内核的线性映射区不支持运行时对BLOCK的动态拆分，因此该操作在启动后无法实现。
 - Linux内存管理采用4KB粒度的基础页（openEuler默认版本为4KB，但ARM64支持16KB、64KB基础页），后续所有内存管理均假设为4KB基础页模式。
@@ -183,7 +182,7 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
         >[!NOTE]说明
         >
         >- 使用共享内存的分布式锁功能时，需要在配置文件中主动设置当前节点的IP地址和端口号以及集群中其他节点的节点信息，启动当前节点的ubsmd进程，会同步启动其他节点。
-        >- 开启TLS（Transport Layer Security，安全传输层协议）认证功能操作详情可参见[开启TLS认证](../../usage/security_management_and_hardening.md#开启tls认证)，如果不使用该功能，将配置项 `ubsm.server.tls.enable` 设为 `off` 即可。
+        >- 开启TLS（Transport Layer Security，安全传输层协议）认证功能操作详情可参见[开启TLS认证](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/security_management_and_hardening.md#%E5%BC%80%E5%90%AFtls%E8%AE%A4%E8%AF%81)，如果不使用该功能，将配置项 `ubsm.server.tls.enable` 设为 `off` 即可。
 
     3. 按“Esc”键，输入**:wq!**，按“Enter”保存并退出编辑。
 
