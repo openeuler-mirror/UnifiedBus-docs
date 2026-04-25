@@ -3,20 +3,20 @@ isManual: true
 sections:
   - label: 关键组件介绍
     sections:
-      - label: UB OS Component
-        sections:      
       - label: UB Service Core
         sections:   
-          - label: 简介
-            href: ./introduction/introduce.md 
-          - label: ubs virt 介绍
+          - label: UBS Virt 介绍
             href: ./introduction/ub_service_core/ubs_virt_introduction.md
+          - label: UBS Memory 介绍
+            href: ./introduction/ub_service_core/ubs_memory_product_description.md
+          - label: UBS Engine(UBSE) 介绍
+            href: ./introduction/ub_service_core/ubs_engine_introduction.md
+          - label: UBS RMRS 介绍
+            href: ./introduction/ub_service_core/ubs_rmrs_introduction.md
   - label: 安装部署
     sections: 
       - label: 部署指南
         href: ./installation/installation_deployment.md 
-      - label: UB OS Component
-        sections:
       - label: UB Service Core
         sections:  
           - label: Virt-awaresched 安装指南
@@ -35,17 +35,17 @@ sections:
     sections:
       - label: UB OS Component
         sections:  
-          - label: 使用UMDK
+          - label: 使用 UMDK
             href: ./usage/umdk_usage.md   
       - label: UB Service Core
         sections:    
-          - label: UBS Memory Usage Guidance
+          - label: 使用 UBS Memory
             sections:
               - label: API接口       
-                href: https://atomgit.com/openeuler/ubs-mem/blob/docs/zh/api_reference.md
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/api_reference.md
               - label: 附录        
-                href: https://atomgit.com/openeuler/ubs-mem/blob/docs/zh/appendixes.md
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/appendixes.md  
               - label: 安全管理与加固        
-                href: https://atomgit.com/openeuler/ubs-mem/blob/docs/zh/security_management_and_hardening.md
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_management_and_hardening.md
               - label: 使用示例       
-                href: https://atomgit.com/openeuler/ubs-mem/blob/docs/zh/usage_example.md     
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/usage_example.md   
