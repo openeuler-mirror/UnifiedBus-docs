@@ -31,11 +31,11 @@ sections:
           - label : UBS-Engine(UBSE) 安装指南
             href: ./installation/ub_service_core/ubs_engine_installation.md
           - label : UBS RMRS 安装指导
-            href: ./installation/ub_service_core/ubs_rmrs_installation.md     
+            href: ./installation/ub_service_core/ubs_rmrs_installation.md             
   - label: 使用
     sections:
       - label: UB OS Component
-        sections:  
+        sections:
           - label: 使用 UMDK
             href: ./usage/umdk_usage.md
       - label: UB Service Core
@@ -79,5 +79,4 @@ sections:
               - label: 开发指南      
                 href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ucache/developer_guide.md
               - label: 用户指南      
-                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/rmrs/user_guide.md 
-  
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ucache/secutity_management_and_hardening.md 
