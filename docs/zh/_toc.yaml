@@ -1,8 +1,9 @@
-label: 灵衢手册
+label: 超节点文档
 isManual: true
+description: 超节点文档的XXXX描述
 sections:
   - label: 关键组件介绍
-    sections:
+    sections:  
       - label: UB Service Core
         sections:   
           - label: UBS Virt 介绍
@@ -15,7 +16,7 @@ sections:
             href: ./introduction/ub_service_core/ubs_rmrs_introduction.md
   - label: 安装部署
     sections: 
-      - label: 部署指南
+      - label: OS安装部署
         href: ./installation/installation_deployment.md 
       - label: UB Service Core
         sections:  
@@ -36,7 +37,7 @@ sections:
       - label: UB OS Component
         sections:  
           - label: 使用 UMDK
-            href: ./usage/umdk_usage.md   
+            href: ./usage/umdk_usage.md
       - label: UB Service Core
         sections:    
           - label: 使用 UBS Memory
@@ -48,4 +49,35 @@ sections:
               - label: 安全管理与加固        
                 href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_management_and_hardening.md
               - label: 使用示例       
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/usage_example.md   
+                href: https://atomgit.com/openeuler/ubs-mem/blob/docs/zh/usage_example.md     
+          - label: UBS Engine Usage Guidance
+            sections:
+              - label: API接口       
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/configuration_instructions.md
+              - label: 配置说明       
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/ubse_api_reference.md                
+              - label: 命令行使用指南     
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/ubse_cli_user_guide.md
+              - label: 单元测试指南       
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/ubse_user_guide.md
+              - label: 用户指南       
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/unit_test_development_guide.md
+          - label: UBS RMRS Usage Guidance
+            sections:
+              - label: 开发指南      
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/rmrs/deverloper_guide.md
+              - label: API接口      
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/rmrs/docapi_docs_reference.md              
+              - label: 版本说明     
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/release_notes.md
+              - label: 最佳实践      
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/tutorial.md
+              - label: 用户指南       
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ubse/user_guide.md
+          - label: ucache Usage Guidance
+            sections:
+              - label: 开发指南      
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/ucache/developer_guide.md
+              - label: 用户指南      
+                href: https://atomgit.com/openeuler/ubs-engine/blob/docs/zh/rmrs/user_guide.md 
+  
