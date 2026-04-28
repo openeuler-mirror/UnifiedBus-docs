@@ -20,8 +20,12 @@ sections:
             href: ./introduction/ub_os_component/ubnative_introduction.md
   - label: 安装部署
     sections: 
+      - label: 硬件环境要求
+        href: ./installation/hardware_requirement.md
       - label: OS安装部署
         href: ./installation/installation_deployment.md 
+      - label: UB OS Component
+        href: ./installation/ub_os_component_installation.md 
       - label: UB Service Core
         sections:  
           - label: Virt-awaresched 安装指南
