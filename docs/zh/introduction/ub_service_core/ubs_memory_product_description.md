@@ -37,3 +37,16 @@ UBS Memory特性分为内存借用和内存共享两类，纵向层次分为应�
 
 **图 3**  内存共享<a name="fig003"></a>  
 ![](./figures/ubsm/内存共享.svg "内存共享")
+
+## 缩略语
+
+|术语/缩略语|含义|
+|--|--|
+|ASLR|Address Space Layout Randomization，内存地址随机化机制。|
+|CC|Cache Coherence，缓存一致性。|
+|FD|File Descriptor，文件描述符。|
+|HCCS|Huawei Cache Coherence System，华为缓存一致性系统。|
+|OOM|Out Of Memory，内存不足。|
+|TLS|Transport Layer Security，安全传输层协议。|
+|UB|Unified Bus，灵衢总线。|
+|UBSM|UBS Memory，UBS内存子系统。|
