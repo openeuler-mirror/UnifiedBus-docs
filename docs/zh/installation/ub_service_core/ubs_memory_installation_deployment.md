@@ -81,8 +81,8 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
 
 ### 前提条件
 
-- 已完成[软件环境](#软件环境)章节所示的各项依赖的安装。
 - 已获取UBS Memory安装包。
+- 已完成[软件环境](#软件环境)章节所示的各项依赖的安装，包括ubs-comm、ubs-engine等。
 
 ### 操作步骤
 
@@ -90,12 +90,10 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
 2. 将获取的所有软件包上传到任意目录，并进入该目录。
 3. 卸载、安装固件。
 
-    1. （可选）卸载已存在的UBS Memory、HCOM。
+    1. （可选）卸载已存在的UBS Memory。
 
         ```bash
         rpm -e ubs-mem-shmem
-        rpm -e ubs-comm-lib-x.x.x
-        rpm -e ubs-comm-devel-x.x.x
         ```
 
     2. 安装UBS Memory。
