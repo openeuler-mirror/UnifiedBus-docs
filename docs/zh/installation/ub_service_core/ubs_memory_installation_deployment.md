@@ -75,7 +75,7 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
 
 | 安装包名称 | 说明 |
 |--|--|
-| ubs-mem-kshmem-*x.x.x-x.x*.aarch64.rpm | UBS Memory安装包。 |
+| ubs-mem-shmem-*x.x.x-x.x*.aarch64.rpm | UBS Memory安装包。 |
 
 ## 安装UBS Memory
 
@@ -93,17 +93,15 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
     1. （可选）卸载已存在的UBS Memory、HCOM。
 
         ```bash
-        rpm -e ubs-mem-kshmem
+        rpm -e ubs-mem-shmem
         rpm -e ubs-comm-lib-x.x.x
         rpm -e ubs-comm-devel-x.x.x
         ```
 
-    2. 安装HCOM、UBS Memory。
+    2. 安装UBS Memory。
 
         ```bash
-        rpm -ivh ubs-comm-lib-x.x.x-*rpm
-        rpm -ivh ubs-comm-devel-x.x.x-*rpm
-        rpm -ivh ubs-mem-kshmem-x.x.x-x.x.*.rpm
+        rpm -ivh ubs-mem-shmem-x.x.x-x.x.*.rpm
         ```
 
     >[!NOTE]说明
@@ -127,7 +125,7 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
         vim /usr/local/ubs_mem/config/ubsmd.conf
         ```
 
-    2. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/appendixes.md#%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E)。
+    2. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/whytao/ubs-mem/blob/master/docs/zh/configuration_parametetrs.md)。
 
         ```yaml
         # the log level of ubsm server, (DEBUG, INFO, WARN, ERROR, CRITICAL)
@@ -240,5 +238,5 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
     >- 如需卸载UBS Engine，请参见[UBS Engine 部署说明](https://atomgit.com/openeuler/ubs-engine/blob/master/docs/build_install/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md)文档。
 
     ```bash
-    rpm -e ubs-mem-kshmem
+    rpm -e ubs-mem-shmem
     ```
