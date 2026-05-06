@@ -16,7 +16,7 @@ sections:
         sections:  
           - label: Virt-awaresched 安装指南
             href: ./installation/ub_service_core/virt_awaresched_installation.md
-          - label: ubs-virt-ovs安装指南
+          - label: ubs-virt-ovs 安装指南
             href: ./installation/ub_service_core/ubs_virt_ovs_installation.md
           - label: vCANN-RT 安装指南
             href: ./installation/ub_service_core/vcann_rt_installation.md      
