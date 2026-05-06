@@ -28,19 +28,19 @@ sections:
         href: ./installation/ub_os_component_installation.md 
       - label: UB Service Core
         sections:  
-          - label: Virt Awaresched 安装指南
+          - label: Virt-awaresched 安装指南
             href: ./installation/ub_service_core/virt_awaresched_installation.md
           - label: UBS Memory 安装指南
             href: ./installation/ub_service_core/ubs_memory_installation_deployment.md
-          - label: UBS Virt OVS 安装指南
+          - label: ubs-virt-ovs安装指南
             href: ./installation/ub_service_core/ubs_virt_ovs_installation.md
-          - label: vCANN RT 安装指南
+          - label: vCANN-RT 安装指南
             href: ./installation/ub_service_core/vcann_rt_installation.md      
           - label : UBS Engine(UBSE) 安装指南
             href: ./installation/ub_service_core/ubs_engine_installation.md
           - label : UBS RMRS 安装指导
             href: ./installation/ub_service_core/ubs_rmrs_installation.md             
-     - label: UB OS Component
+      - label: UB OS Component
         sections:
           - label: UBNative 安装指南
             href: ./installation/ub_os_component/ubnative_installation.md
