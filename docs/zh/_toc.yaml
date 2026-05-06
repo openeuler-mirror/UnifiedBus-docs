@@ -3,21 +3,7 @@ isManual: true
 description: 介绍超节点安装部署、关键组件典型用法
 sections:
   - label: 关键组件介绍
-    sections:  
-      - label: UB Service Core
-        sections:   
-          - label: UBS Virt 介绍
-            href: ./introduction/ub_service_core/ubs_virt_introduction.md
-          - label: UBS Memory 介绍
-            href: ./introduction/ub_service_core/ubs_memory_product_description.md
-          - label: UBS Engine(UBSE) 介绍
-            href: ./introduction/ub_service_core/ubs_engine_introduction.md
-          - label: UBS RMRS 介绍
-            href: ./introduction/ub_service_core/ubs_rmrs_introduction.md
-      - label: UB OS Component
-        sections:
-          - label: UBNative 介绍
-            href: ./introduction/ub_os_component/ubnative_introduction.md
+    href: ./introduction/introduction.md
   - label: 安装部署
     sections: 
       - label: 硬件环境要求
