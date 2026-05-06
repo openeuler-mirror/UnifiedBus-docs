@@ -4,4 +4,4 @@
 
 UB Service Core构筑5大集群级系统服务，支持不同OS并全面开源至openEuler社区，释放超节点平等互联架构优势，全面使能应用加速30%~50%，促进灵衢系统软件生态构筑。
 
-详见：https://www.unifiedbus.com/zh
+详见：灵衢社区[https://www.unifiedbus.com/zh]
