@@ -20,10 +20,10 @@
 
 ## 安装注意事项
 
-  - 非高安场景下，UBSE与UBM使用UDS通信，需要将ubse用户加到ubm_nuds用户组中，该用户组由UBM服务创建，如果UBM服务未在UBSE前安装，ubse用户可能无法加入ubm_nuds用户组，导致UBSE服务与UBM服务通信异常。
+  - 非高安场景下，UBSE与UBM使用UDS通信，需要将ubse用户加到ubm_nuds用户组中，该用户组由UBM服务创建，如果UBM服务未在UBSE前安装，ubse用户可能无法加入ubm_nuds用户组，导致UBSE服务与UBM服务通信异常。待UBM服务完成安装后，需手动将ubse用户加入ubm_nuds用户组。
   - UBSE需要调用ubturbo接口，ubturbo接口有权限校验，需要将ubse用户加到ubturbo用户组中，该用户组由ubturbo服务创建，如果ubturbo服务未安装，ubse用户可能无法加入ubturbo用户组，导致UBSE服务调用ubturbo接口异常。待ubturbo安装完成后，需手动将ubse用户加入ubturbo用户组。
 
-## 安装步骤
+## 执行安装
 
 - 在线安装
 
@@ -88,7 +88,7 @@
   | `/usr/lib64/python3.11/site-packages/ubse` | 内部文件（`*.py`）权限：`644`             |
   | `/usr/lib/python3.11/site-packages/ubse-1.0.0-py3.11.egg-info` | 内部文件权限：`644`，Python包相关信息。             |
 
-### （可选）修改配置
+## （可选）修改配置
 
 1. 编辑配置文件：
 
@@ -123,7 +123,7 @@
     sudo systemctl enable ubse
     ```
 
-### （可选）安装URMA
+## （可选）安装URMA
 
 默认使用urma通信时需确保部署环境中已安装URMA驱动和运行时库，否则服务将无法启动或通信失败
 
