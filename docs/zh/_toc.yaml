@@ -64,11 +64,9 @@ sections:
         sections:    
           - label: 使用 UBS Memory
             sections:
-              - label: API接口       
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/api_reference.md
-              - label: 附录        
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/appendixes.md  
-              - label: 安全管理与加固        
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_management_and_hardening.md
-              - label: 使用示例       
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/usage_example.md
+              - label: 接口说明
+                href: https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/api_description.md
+              - label: 配置说明        
+                href: https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md  
+              - label: 安全说明        
+                href: https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md
