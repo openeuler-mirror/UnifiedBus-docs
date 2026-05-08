@@ -123,7 +123,7 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
         vim /usr/local/ubs_mem/config/ubsmd.conf
         ```
 
-    2. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/whytao/ubs-mem/blob/master/docs/zh/configuration_parametetrs.md)。
+    2. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/whytao/ubs-mem/blob/master/docs/zh/configuration_description.md)。
 
         ```yaml
         # the log level of ubsm server, (DEBUG, INFO, WARN, ERROR, CRITICAL)
@@ -178,7 +178,7 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
         >[!NOTE]说明
         >
         >- 使用共享内存的分布式锁功能时，需要在配置文件中主动设置当前节点的IP地址和端口号以及集群中其他节点的节点信息，启动当前节点的ubsmd进程，会同步启动其他节点。
-        >- 开启TLS（Transport Layer Security，安全传输层协议）认证功能操作详情可参见[开启TLS认证](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/security_management_and_hardening.md#%E5%BC%80%E5%90%AFtls%E8%AE%A4%E8%AF%81)，如果不使用该功能，将配置项 `ubsm.server.tls.enable` 设为 `off` 即可。
+        >- 开启TLS（Transport Layer Security，安全传输层协议）认证功能操作详情可参见[开启TLS认证](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md#%E5%BC%80%E5%90%AFtls%E8%AE%A4%E8%AF%81)，如果不使用该功能，将配置项 `ubsm.server.tls.enable` 设为 `off` 即可。
 
     3. 按“Esc”键，输入**:wq!**，按“Enter”保存并退出编辑。
 
