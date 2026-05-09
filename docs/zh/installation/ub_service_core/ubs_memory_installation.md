@@ -1,28 +1,5 @@
 # 安装部署
 
-## 约束限制
-
-- 如果不做特殊说明，均默认为ARM64架构。
-- Linux通用内存映射均是Cacheable属性映射内存，访存时内存会经过Cache。
-- 内核线性映射区支持BLOCK粒度（如PUD/PMD）和PAGE粒度的地址映射。使用BLOCK粒度有助于减少TLB miss，提升性能。但BLOCK与PAGE之间的映射粒度在系统启动后不可动态切换。若需修改BLOCK中某个单页（如4KB）的属性，理论上需将整个BLOCK拆分为PAGE粒度，并按照ARM规范中的BBM（Break-Before-Make）规则进行更新。然而，目前ARM内核的线性映射区不支持运行时对BLOCK的动态拆分，因此该操作在启动后无法实现。
-- Linux内存管理采用4KB粒度的基础页（openEuler默认版本为4KB，但ARM64支持16KB、64KB基础页），后续所有内存管理均假设为4KB基础页模式。
-
-- Linux通用内存管理器有以下两种：
-
-    - 伙伴系统：最大分配连续物理页大小为4MB。
-    - 静态大页（HugeTLB），虚机化场景为了性能，会采用静态预留方式，在启动时预留大部分内存放到HugeTLB管理器中，通常采用1GB/2MB粒度。
-
-- 对于伙伴系统分配大页2MB，如果有空闲的连续2MB内存，则直接分配，如果不存在，则需要进行内存规整（小页合成大页），但因为内存碎片化问题（1个2MB地址空间中有部分页面被分配，且无法迁移），会导致即使有空闲内存，也无法分配2MB页，即分配2MB成功率难以保证。
-
-- Linux内存热插拔是系统级别行为，会影响其他子系统，上下线内存速度在重载下耗时久，可能会导致失败。
-
-    - 需要获取热插拔全局锁，上线与上线、上线与下线，下线与下线等均需要串行操作。
-    - 每个内存上下线粒度至少为128MB。
-    - 通过热插拔notify事件通知其他子系统做相应变动。
-    - 上线新内存也需要分配管理元数据占用本地内存。
-
-- Linux内核改动需要遵循Linux规范，不能破坏已有接口语义（常见规则如Documentation/filesystems/proc.rst，Documentation/ABI/等）。
-
 ## 安装前准备
 
 ### 硬件环境
@@ -39,49 +16,28 @@
 
 在安装UBS Memory之前，需要准备以下软件环境：
 
-#### 安装系统依赖
+- **安装系统依赖**
 
-```shell
-# 安装基础依赖包
-yum install -y spdlog openssl-libs libboundscheck
-```
+    ```shell
+    # 安装基础依赖包
+    yum install -y spdlog openssl-libs libboundscheck
+    ```
 
-#### 安装UBS核心组件
+- **安装UBS核心组件**
 
-**方法一：通过yum源安装（推荐）**
+    ```shell
+    # 安装UBS通信库
+    yum install -y ubs-comm-lib ubs-comm-devel
 
-```shell
-# 安装UBS通信库
-yum install -y ubs-comm-lib ubs-comm-devel
-
-# 安装UBS引擎
-yum install -y ubs-engine ubs-engine-client-libs ubs-engine-client-devel
-```
-
-**方法二：手动安装RPM包**
-
-```shell
-# 安装UBS通信库
-rpm -ivh ubs-comm-lib-*.rpm
-rpm -ivh ubs-comm-devel-*.rpm
-
-# 安装UBS引擎
-rpm -ivh ubs-engine-1.*.rpm
-rpm -ivh ubs-engine-client-libs-1.*.rpm
-rpm -ivh ubs-engine-client-devel-1.*.rpm
-```
-
-### 准备软件包
-
-| 安装包名称 | 说明 |
-|--|--|
-| ubs-mem-shmem-*x.x.x-x.x*.aarch64.rpm | UBS Memory安装包。 |
+    # 安装UBS引擎
+    yum install -y ubs-engine ubs-engine-client-libs ubs-engine-client-devel
+    ```
 
 ## 安装UBS Memory
 
 ### 前提条件
 
-- 已获取UBS Memory安装包。
+- 已获取UBS Memory安装包：`ubs-mem-shmem-*x.x.x-x.x*.aarch64.rpm`。
 - 已完成[软件环境](#软件环境)章节所示的各项依赖的安装，包括ubs-comm、ubs-engine等。
 
 ### 操作步骤
@@ -123,7 +79,7 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
         vim /usr/local/ubs_mem/config/ubsmd.conf
         ```
 
-    2. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/whytao/ubs-mem/blob/master/docs/zh/configuration_description.md)。
+    2. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md)。
 
         ```yaml
         # the log level of ubsm server, (DEBUG, INFO, WARN, ERROR, CRITICAL)
@@ -223,8 +179,6 @@ rpm -ivh ubs-engine-client-devel-1.*.rpm
     ```
 
 ## 卸载UBS Memory
-
-### 操作步骤
 
 1. 使用\{UBSM-install-user\}用户登录服务器。
 2. 卸载UBS Memory。
