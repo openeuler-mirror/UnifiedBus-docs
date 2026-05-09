@@ -4,4 +4,4 @@
 
 灵衢系统高阶服务（UB Service Core）：为灵衢系统提供多样性算力管理调度，打造ScaleUp新能力；构建内存池化、通信、IO、虚拟化等场景能力，提供多种方式的生态对接，充分释放超节点架构优势。
 
-详见：灵衢社区[https://www.unifiedbus.com/zh]
+详见：[灵衢社区](https://www.unifiedbus.com/zh)
