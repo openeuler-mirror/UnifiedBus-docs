@@ -4,7 +4,6 @@ description: 介绍超节点安装部署、关键组件典型用法
 sections:
   - label: 关键组件介绍
     href: ./introduction/introduction.md
-    href: ./introduction/introduction.md
   - label: 安装部署
     sections: 
       - label: 硬件环境要求
