@@ -23,14 +23,14 @@
     yum install -y spdlog openssl-libs libboundscheck
     ```
 
-- **安装UBS核心组件**
+- **安装 ubs-core**
 
     ```shell
-    # 安装UBS通信库
-    yum install -y ubs-comm-lib ubs-comm-devel
+    # 安装 ubs-comm
+    yum install -y ubs-comm-lib
 
-    # 安装UBS引擎
-    yum install -y ubs-engine ubs-engine-client-libs ubs-engine-client-devel
+    # 安装 ubs-engine
+    yum install -y ubs-engine ubs-engine-client-libs
     ```
 
 ## 安装UBS Memory
@@ -44,19 +44,19 @@
 
 1. 使用\{UBSM-install-user\}用户登录服务器。
 2. 将获取的所有软件包上传到任意目录，并进入该目录。
-3. 卸载、安装固件。
+3. 安装UBS Memory。
 
-    1. （可选）卸载已存在的UBS Memory。
+    a. （可选）卸载已存在的UBS Memory。
 
-        ```bash
-        rpm -e ubs-mem-shmem
-        ```
+    ```bash
+    rpm -e ubs-mem-shmem
+    ```
 
-    2. 安装UBS Memory。
+    b. 安装UBS Memory。
 
-        ```bash
-        rpm -ivh ubs-mem-shmem-x.x.x-x.x.*.rpm
-        ```
+    ```bash
+    rpm -ivh ubs-mem-shmem-x.x.x-x.x.*.rpm
+    ```
 
     >[!NOTE]说明
     >- 由于UBS Engine依赖HCOM，卸载HCOM之前需先卸载UBS Engine。
@@ -72,71 +72,71 @@
     systemctl start ubse.service
     ```
 
-5. 修改ubsmd.conf配置文件。
-    1. 打开“/usr/local/ubs\_mem/config/ubsmd.conf”配置文件。
+5. （可选）修改ubsmd.conf配置文件。
+    a. 打开“/usr/local/ubs\_mem/config/ubsmd.conf”配置文件。
 
-        ```bash
-        vim /usr/local/ubs_mem/config/ubsmd.conf
-        ```
+    ```bash
+    vim /usr/local/ubs_mem/config/ubsmd.conf
+    ```
 
-    2. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md)。
+    b. 按“i”进入编辑模式，根据实际情况对相关参数进行配置，参数详情请参见附录的[表1 ubsmd.conf配置文件参数说明](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md)。
 
-        ```yaml
-        # the log level of ubsm server, (DEBUG, INFO, WARN, ERROR, CRITICAL)
-        ubsm.server.log.level = INFO
-        # the log file path, must be canonical path
-        ubsm.server.log.path = /var/log/ubsm
-        # log file count, min is 1, max is 50
-        ubsm.server.log.rotation.file.count = 10
-        # log file size(MB), min is 2, max is 100
-        ubsm.server.log.rotation.file.size = 20
-        # enable or disable audit log, (on, off)
-        ubsm.server.audit.enable = on
-        # audit log, the configuration item value range is the same as 'ubsm.server.log.*'
-        ubsm.server.audit.log.path = /var/log/ubsm
-        ubsm.server.audit.log.rotation.file.count = 10
-        ubsm.server.audit.log.rotation.file.size = 20
-        # CC lock
-        ubsm.lock.enable = off
-        ubsm.lock.expire.time = 300
-        ubsm.lock.dev.name = bonding_dev_0
-        ubsm.lock.dev.eid = 0
-        # CC lock tls options
-        ubsm.lock.tls.enable = on
-        ubsm.lock.tls.ca.path = /path/cacert.pem
-        ubsm.lock.tls.crl.path = /path/crl.pem
-        ubsm.lock.tls.cert.path = /path/cert.pem
-        ubsm.lock.tls.key.path = /path/key.pem
-        ubsm.lock.tls.keypass.path = /path/keypass.txt
-        # Zen discovery
-        # election timeout, min is 0, max is 2000
-        ubsm.discovery.election.timeout = 1000
-        # min nodes, min is 0, max is 30
-        ubsm.discovery.min.nodes = 0
-        ubsm.server.rpc.local.ipseg = 127.0.0.1:7201
-        ubsm.server.rpc.remote.ipseg = 127.0.0.1:7301
-        # tls options
-        ubsm.server.tls.enable = on
-        ubsm.server.tls.ciphersuits = aes_gcm_128
-        ubsm.server.tls.ca.path = /path/cacert.pem
-        ubsm.server.tls.crl.path = /path/crl.pem
-        ubsm.server.tls.cert.path = /path/cert.pem
-        ubsm.server.tls.key.path = /path/key.pem
-        ubsm.server.tls.keypass.path = /path/keypass.txt
-        # max is 8192, default 256
-        ubsm.hcom.max.connect.num = 256
-        # enable or disable memory lease cache, (on, off)
-        ubsm.server.lease.cache.enable = off
-        # enable performance statistics, (on off)
-        ubsm.performance.statistics.enable = off
-        ```
+    ```yaml
+    # the log level of ubsm server, (DEBUG, INFO, WARN, ERROR, CRITICAL)
+    ubsm.server.log.level = INFO
+    # the log file path, must be canonical path
+    ubsm.server.log.path = /var/log/ubsm
+    # log file count, min is 1, max is 50
+    ubsm.server.log.rotation.file.count = 10
+    # log file size(MB), min is 2, max is 100
+    ubsm.server.log.rotation.file.size = 20
+    # enable or disable audit log, (on, off)
+    ubsm.server.audit.enable = on
+    # audit log, the configuration item value range is the same as 'ubsm.server.log.*'
+    ubsm.server.audit.log.path = /var/log/ubsm
+    ubsm.server.audit.log.rotation.file.count = 10
+    ubsm.server.audit.log.rotation.file.size = 20
+    # CC lock
+    ubsm.lock.enable = off
+    ubsm.lock.expire.time = 300
+    ubsm.lock.dev.name = bonding_dev_0
+    ubsm.lock.dev.eid = 0
+    # CC lock tls options
+    ubsm.lock.tls.enable = on
+    ubsm.lock.tls.ca.path = /path/cacert.pem
+    ubsm.lock.tls.crl.path = /path/crl.pem
+    ubsm.lock.tls.cert.path = /path/cert.pem
+    ubsm.lock.tls.key.path = /path/key.pem
+    ubsm.lock.tls.keypass.path = /path/keypass.txt
+    # Zen discovery
+    # election timeout, min is 0, max is 2000
+    ubsm.discovery.election.timeout = 1000
+    # min nodes, min is 0, max is 30
+    ubsm.discovery.min.nodes = 0
+    ubsm.server.rpc.local.ipseg = 127.0.0.1:7201
+    ubsm.server.rpc.remote.ipseg = 127.0.0.1:7301
+    # tls options
+    ubsm.server.tls.enable = on
+    ubsm.server.tls.ciphersuits = aes_gcm_128
+    ubsm.server.tls.ca.path = /path/cacert.pem
+    ubsm.server.tls.crl.path = /path/crl.pem
+    ubsm.server.tls.cert.path = /path/cert.pem
+    ubsm.server.tls.key.path = /path/key.pem
+    ubsm.server.tls.keypass.path = /path/keypass.txt
+    # max is 8192, default 256
+    ubsm.hcom.max.connect.num = 256
+    # enable or disable memory lease cache, (on, off)
+    ubsm.server.lease.cache.enable = off
+    # enable performance statistics, (on off)
+    ubsm.performance.statistics.enable = off
+    ```
 
-        >[!NOTE]说明
-        >
-        >- 使用共享内存的分布式锁功能时，需要在配置文件中主动设置当前节点的IP地址和端口号以及集群中其他节点的节点信息，启动当前节点的ubsmd进程，会同步启动其他节点。
-        >- 开启TLS（Transport Layer Security，安全传输层协议）认证功能操作详情可参见[开启TLS认证](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md#%E5%BC%80%E5%90%AFtls%E8%AE%A4%E8%AF%81)，如果不使用该功能，将配置项 `ubsm.server.tls.enable` 设为 `off` 即可。
+    >[!NOTE]说明
+    >
+    >- 使用共享内存的分布式锁功能时，需要在配置文件中主动设置当前节点的IP地址和端口号以及集群中其他节点的节点信息，启动当前节点的ubsmd进程，会同步启动其他节点。
+    >- 开启TLS（Transport Layer Security，安全传输层协议）认证功能操作详情可参见[开启TLS认证](https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md#%E5%BC%80%E5%90%AFtls%E8%AE%A4%E8%AF%81)，如果不使用该功能，将配置项 `ubsm.server.tls.enable` 设为 `off` 即可。
 
-    3. 按“Esc”键，输入**:wq!**，按“Enter”保存并退出编辑。
+    c. 按“Esc”键，输入**:wq!**，按“Enter”保存并退出编辑。
 
 6. 启动ubsmd。
 
@@ -166,16 +166,6 @@
          Memory: xxG ()
          CGroup: /system.slice/ubsmd.service
                  └─xxx /usr/local/ubs_mem/bin/ubsmd -binpath=/usr/local/ubs_mem
-    ```
-
-8. 停止ubsmd。
-
-    >[!NOTE]说明
-    >- 内存借用提供类似 **malloc/free** 接口，当应用侧异常退出时，由ubsmd完成资源回收操作。
-    >- 内存共享提供类似 **shmem\_allocate/shmem\_deallocate** 接口，应用侧需要跨多节点共享访问，由应用侧负责共享内存的申请释放操作。
-
-    ```bash
-    systemctl stop ubsmd.service
     ```
 
 ## 卸载UBS Memory
