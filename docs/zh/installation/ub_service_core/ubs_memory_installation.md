@@ -73,6 +73,7 @@
     ```
 
 5. （可选）修改ubsmd.conf配置文件。
+
     a. 打开“/usr/local/ubs\_mem/config/ubsmd.conf”配置文件。
 
     ```bash
