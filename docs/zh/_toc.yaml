@@ -20,6 +20,8 @@ sections:
         sections:        
           - label : UBS Engine(UBSE) 安装指南
             href: ./installation/ub_service_core/ubs_engine_installation.md
+          - label : UBS Memory 安装指南
+            href: ./installation/ub_service_core/ubs_memory_installation.md
   - label: 使用
     sections:
       - label: UB OS Component
