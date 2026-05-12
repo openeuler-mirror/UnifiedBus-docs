@@ -93,7 +93,7 @@ yum install -y ub-pkg-virt
 systemctl status ub-pkg-virt
 ```
 
-## 通用部署方法
+## 全量部署
 
 如果需要UB OS 的通信、内存池化、虚拟化等全部功能，请直接安装ub-pkg-manager，该包会自动安装ub-pkg-urma、ub-pkg-mem、ub-pkg-virt，安装方法：
 
