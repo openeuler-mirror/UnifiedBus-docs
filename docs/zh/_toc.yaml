@@ -54,20 +54,20 @@ sections:
         sections:    
           - label: 使用 UBS Memory
             sections:
-              - label: API接口
-                href: https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/api_description.md
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/api_description.md
               - label: 配置说明        
-                href: https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md  
-              - label: 安全管理与加固       
-                href: https://gitcode.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md  
+              - label: 安全说明       
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md
           - label: 使用 UBS Engine
             sections:
-              - label: API接口
-                href: https://gitcode.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_api_reference.md
-              - label: CLI 使用说明
-                href: https://gitcode.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_cli_user_guide.md
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_api_reference.md
+              - label: 命令行说明
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_cli_user_guide.md
               - label: 配置说明 
-                href: https://gitcode.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_configration_instructions.md 
-              - label: 安全管理与加固
-                href: https://gitcode.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_security_description.md  
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_configration_instructions.md 
+              - label: 安全说明
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_security_description.md  
                                      
