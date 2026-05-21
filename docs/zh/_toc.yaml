@@ -1,0 +1,73 @@
+label: 超节点
+isManual: true
+description: 介绍超节点安装部署、关键组件典型用法
+sections:
+  - label: 关键组件介绍
+    href: ./introduction/introduction.md
+  - label: 安装部署
+    sections: 
+      - label: 硬件环境要求
+        href: ./installation/hardware_requirement/hardware_requirement.md
+      - label: OS安装部署
+        href: ./installation/os_installation/installation_deployment.md        
+      - label: UB OS Component
+        href: ./installation/ub_os_component/ub_os_component_installation.md
+      - label: UB Service Core
+        sections:        
+          - label : UBS Engine
+            href: ./installation/ub_service_core/ubs_engine_installation.md
+          - label : UBS Memory
+            href: ./installation/ub_service_core/ubs_memory_installation.md
+  - label: 使用
+    sections:
+      - label: UB OS Component
+        sections:
+          - label: UB通信
+            sections:
+              - label: URMA 使用说明
+                sections:
+                  - label: 使用介绍
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/urma/URMA%20User%20Guide.ch.md
+                  - label: API接口
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/urma/URMA%20API%20Guide.ch.md
+              - label: URPC 使用说明
+                sections:
+                  - label: 使用介绍
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/urpc/URPC%20User%20Guide.ch.md
+                  - label: API接口
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/urpc/URPC%20Framework%20API.ch.md
+              - label: DLock 使用说明
+                sections:
+                  - label: 使用介绍
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/ulock/dlock/DLock%20User%20Guide.ch.md
+                  - label: API接口
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/ulock/dlock/DLock%20API%20Guide.ch.md
+              - label: UMS 使用说明
+                sections:
+                  - label: 使用介绍
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/usock/ums/UMS%20User%20Guide.ch.md
+                  - label: API接口
+                    href: https://atomgit.com/openeuler/umdk/blob/master/doc/ch/usock/ums/UMS%20API%20Guide.ch.md
+          - label: 灵衢虚拟化
+            href: ./usage/ub_os_component/ubnative_usage.md
+      - label: UB Service Core
+        sections:    
+          - label: 使用 UBS Memory
+            sections:
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/api_description.md
+              - label: 配置说明        
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md  
+              - label: 安全说明       
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md
+          - label: 使用 UBS Engine
+            sections:
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_api_reference.md
+              - label: 命令行说明
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_cli_user_guide.md
+              - label: 配置说明 
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_configration_instructions.md 
+              - label: 安全说明
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_security_description.md  
+                                     
