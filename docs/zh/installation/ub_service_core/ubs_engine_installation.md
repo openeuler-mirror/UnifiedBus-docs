@@ -135,9 +135,9 @@ sudo yum install -y umdk-urma-kmod
 
 安装后重启ubs engine服务
 
-    ```bash
-    sudo systemctl restart ubse
-    ```
+  ```bash
+  sudo systemctl restart ubse
+  ```
 
 ## 验证部署
 
