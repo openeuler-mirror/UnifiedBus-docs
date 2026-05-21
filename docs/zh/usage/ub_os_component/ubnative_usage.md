@@ -79,7 +79,7 @@ UB总线（灵衢总线）支持任意拓扑结构的连接，节点之间可通
 
 ## 二、UB设备直通配置及使用说明
 
-UB Device实现有多个UB Entity，在Hypervisor的管理下，可以将UB Entity分配给不同的虚机使用，UB Etity在虚拟化应用中，有以下特点：
+UB Device实现有多个UB Entity，在Hypervisor的管理下，可以将UB Entity分配给不同的虚机使用，UB Entity在虚拟化应用中，有以下特点：
 
 - UB Entity的数据面直接和虚机交互；管理面为了安全考虑，需要经由Hypervisor来进行控制。数据面包括：资源空间访问、中断、设备业务数据流。管理面主要指对设备UB Entity的管理，主要通过配置空间的访问来完成。
 
