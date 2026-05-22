@@ -58,7 +58,7 @@
         rpm -e ubs-mem-shmem
         ```
 
- 4. 安装UBS Memory。
+4. 安装UBS Memory。
 
     - openEuler 24.03 LTS SP3 操作系统
     
