@@ -44,19 +44,33 @@
 
 1. 使用root用户登录服务器。
 2. 将获取的所有软件包上传到任意目录，并进入该目录。
-3. 安装UBS Memory。
+3. （可选）卸载已存在的UBS Memory。
 
-    a. （可选）卸载已存在的UBS Memory。
+    - openEuler 操作系统
+        
+        ```bash
+        yum remove ubs-mem-shmem
+        ```
 
-    ```bash
-    rpm -e ubs-mem-shmem
-    ```
+    - 其他操作系统
+        
+        ```bash
+        rpm -e ubs-mem-shmem
+        ```
 
-    b. 安装UBS Memory。
+4. 安装UBS Memory。
 
-    ```bash
-    rpm -ivh ubs-mem-shmem-x.x.x-x.x.*.rpm
-    ```
+    - openEuler 操作系统
+    
+        ```bash
+        yum install -y ubs-mem-shmem
+        ```
+
+    - 其他操作系统
+    
+        ```bash
+        rpm -ivh ubs-mem-shmem-x.x.x-x.x.*.rpm
+        ```
 
     >[!NOTE]说明
     >- 内存服务以ubsmd用户的身份运行，在使用RPM包安装时，若系统中不存在ubsmd用户，安装脚本将自动创建该用户。
@@ -65,13 +79,13 @@
     >- 配置环境变量 **UBSM\_SDK\_TRACE\_ENABLE = 1**，开启性能打点统计，会在默认的日志路径（/var/log/ubsm）生成对应的打点数据。
     >- 配置环境变量 **MXM\_CHANNEL\_TIMEOUT= xx**，控制IPC通信的channel超时时间（单位s），当大块内存操作耗时较久时，可以配置较长时间，默认为60s。
 
-4. 启动UBS Engine服务。
+5. 启动UBS Engine服务。
 
     ```bash
     systemctl start ubse.service
     ```
 
-5. （可选）修改ubsmd.conf配置文件。
+6. （可选）修改ubsmd.conf配置文件。
 
     a. 打开“/usr/local/ubs\_mem/config/ubsmd.conf”配置文件。
 
@@ -138,7 +152,7 @@
 
     c. 按“Esc”键，输入**:wq!**，按“Enter”保存并退出编辑。
 
-6. 启动ubsmd。
+7. 启动ubsmd。
 
     ```bash
     systemctl start ubsmd
@@ -147,7 +161,7 @@
     >[!NOTE]说明
     >ubsmd进程启动依赖UBSE，该服务启动成功方可加载成功。
 
-7. 查看ubsmd状态。
+8. 查看ubsmd状态。
 
     ```bash
     systemctl status ubsmd
@@ -179,6 +193,14 @@
     >- 为了避免权限问题，卸载后用户和用户组ubsmd将会保留。
     >- 如需卸载UBS Engine，请参见[UBS Engine 部署说明](https://atomgit.com/openeuler/ubs-engine/blob/master/docs/build_install/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md)文档。
 
-    ```bash
-    rpm -e ubs-mem-shmem
-    ```
+    - openEuler 操作系统
+        
+        ```bash
+        yum remove ubs-mem-shmem
+        ```
+
+    - 其他操作系统
+
+        ```bash
+        rpm -e ubs-mem-shmem
+        ```
