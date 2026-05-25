@@ -46,7 +46,7 @@
 2. 将获取的所有软件包上传到任意目录，并进入该目录。
 3. （可选）卸载已存在的UBS Memory。
 
-    - openEuler 24.03 LTS SP3 操作系统
+    - openEuler 操作系统
         
         ```bash
         yum remove ubs-mem-shmem
@@ -60,7 +60,7 @@
 
 4. 安装UBS Memory。
 
-    - openEuler 24.03 LTS SP3 操作系统
+    - openEuler 操作系统
     
         ```bash
         yum install -y ubs-mem-shmem
@@ -193,7 +193,7 @@
     >- 为了避免权限问题，卸载后用户和用户组ubsmd将会保留。
     >- 如需卸载UBS Engine，请参见[UBS Engine 部署说明](https://atomgit.com/openeuler/ubs-engine/blob/master/docs/build_install/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md)文档。
 
-    - openEuler 24.03 LTS SP3 操作系统
+    - openEuler 操作系统
         
         ```bash
         yum remove ubs-mem-shmem
