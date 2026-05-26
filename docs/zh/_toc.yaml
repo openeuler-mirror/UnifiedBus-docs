@@ -13,11 +13,11 @@ sections:
       - label: UB OS Component
         href: ./installation/ub_os_component/ub_os_component_installation.md
       - label: UB Service Core
-        sections:        
+        sections: 
           - label : UBS Engine
-            href: ./installation/ub_service_core/ubs_engine_installation.md
+            href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_installation.md
           - label : UBS Memory
-            href: ./installation/ub_service_core/ubs_memory_installation.md
+            href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/installation_deployment.md
   - label: 使用
     sections:
       - label: UB OS Component
