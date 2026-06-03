@@ -63,11 +63,28 @@ sections:
           - label: 使用 UBS Engine
             sections:
               - label: 接口说明
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_api_reference.md
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_api_reference.md
               - label: 命令行说明
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_cli_user_guide.md
-              - label: 配置说明 
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_configration_instructions.md 
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_cli_user_guide.md
+              - label: 配置说明
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_configration_instructions.md 
               - label: 安全说明
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_security_description.md  
-                                     
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_security_description.md  
+              - label: RMRS
+                sections:
+                  - label: 使用说明
+                    href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/addons/rmrs/rmrs_user_guide.md
+                  - label: 接口说明
+                    href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/addons/rmrs/rmrs_api_reference.md
+              - label: ucache
+                sections: 
+                  - label: 使用说明
+                    href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/addons/ucache/ucache_user_guide.md
+              - label: virt_agent
+                sections:
+                  - label: 接口说明
+                    href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/addons/virt_agent/virt_agent_api_reference.md
+                  - label: 配置说明
+                    href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/addons/virt_agent/virt_agent_configration_instructions.md
+                  - label: 安全说明
+                    href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/addons/virt_agent/virt_agent_security_description.md
