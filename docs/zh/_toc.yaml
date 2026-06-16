@@ -15,7 +15,7 @@ sections:
       - label: UB Service Core
         sections: 
           - label : UBS Engine
-            href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_installation.md
+            href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_installation.md
           - label : UBS Memory
             href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/installation_deployment.md
   - label: 使用
