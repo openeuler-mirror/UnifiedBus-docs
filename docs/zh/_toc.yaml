@@ -63,11 +63,11 @@ sections:
           - label: 使用 UBS Engine
             sections:
               - label: 接口说明
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_api_reference.md
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_api_reference.md
               - label: 命令行说明
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_cli_user_guide.md
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_cli_user_guide.md
               - label: 配置说明 
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_configration_instructions.md 
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_configration_instructions.md 
               - label: 安全说明
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_security_description.md  
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_security_description.md  
                                      
