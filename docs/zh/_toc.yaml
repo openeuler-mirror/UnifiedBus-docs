@@ -51,15 +51,7 @@ sections:
           - label: 灵衢虚拟化
             href: ./usage/ub_os_component/ubnative_usage.md
       - label: UB Service Core
-        sections:    
-          - label: 使用 UBS Memory
-            sections:
-              - label: 接口说明
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/api_description.md
-              - label: 配置说明        
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md  
-              - label: 安全说明       
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md
+        sections:   
           - label: 使用 UBS Engine
             sections:
               - label: 接口说明
@@ -69,5 +61,14 @@ sections:
               - label: 配置说明 
                 href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_configration_instructions.md 
               - label: 安全说明
-                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_security_description.md  
+                href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_security_description.md   
+          - label: 使用 UBS Memory
+            sections:
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/api_description.md
+              - label: 配置说明        
+                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/configuration_description.md  
+              - label: 安全说明       
+                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/security_description.md
+
                                      
