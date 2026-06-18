@@ -15,7 +15,7 @@ sections:
       - label: UB Service Core
         sections:        
           - label : UBS Engine
-            href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse/ubse_installation.md
+            href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_installation.md
           - label : UBS Memory
             href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/installation_deployment.md
   - label: 使用
@@ -51,15 +51,7 @@ sections:
           - label: 灵衢虚拟化
             href: ./usage/ub_os_component/ubnative_usage.md
       - label: UB Service Core
-        sections:    
-          - label: 使用 UBS Memory
-            sections:
-              - label: 接口说明
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/api_description.md
-              - label: 配置说明        
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md  
-              - label: 安全说明       
-                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md
+        sections:
           - label: 使用 UBS Engine
             sections:
               - label: 接口说明
@@ -70,4 +62,13 @@ sections:
                 href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_configration_instructions.md 
               - label: 安全说明
                 href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_security_description.md  
+          - label: 使用 UBS Memory
+            sections:
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/api_description.md
+              - label: 配置说明        
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/configuration_description.md  
+              - label: 安全说明       
+                href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/security_description.md
+ 
                                      
