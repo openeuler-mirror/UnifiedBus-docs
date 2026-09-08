@@ -18,6 +18,7 @@ sections:
             href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_installation.md
           - label: UBS Memory
             href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/installation_deployment.md
+            md_path: ./ubs-mem/docs/zh/installation_deployment.md
           - label : UBS Comm
             href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/installation_deployment.md
           - label: UBS IO
