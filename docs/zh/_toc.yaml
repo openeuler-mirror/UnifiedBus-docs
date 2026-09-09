@@ -20,7 +20,7 @@ sections:
             href: https://atomgit.com/openeuler/ubs-mem/blob/master/docs/zh/installation_deployment.md
             md_path: ./ubs-mem/docs/zh/installation_deployment.md
           - label : UBS Comm
-            href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/installation_deployment.md
+            href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_installation_deployment.md
           - label: UBS IO
             sections:
               - label: UBS IO BoostIO
@@ -82,13 +82,13 @@ sections:
           - label: 使用 UBS Comm
             sections:
               - label: 产品描述
-                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/product_description.md
+                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_product_description.md
               - label: 接口说明
-                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/api_reference.md
+                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_api_reference.md
               - label: 安全技术介绍        
-                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/security_technical_whitepaper.md  
+                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_security_technical_whitepaper.md  
               - label: 用户指南       
-                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/user_guide.md
+                href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_user_guide.md
           - label: 使用 UBS IO
             sections:
               - label: 使用UBS IO BoostIO
