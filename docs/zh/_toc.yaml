@@ -18,14 +18,29 @@ sections:
             href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_installation.md
           - label: UBS Memory
             href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/installation_deployment.md
+            md_path: ./ubs-mem/docs/zh/installation_deployment.md
           - label : UBS Comm
             href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/installation_deployment.md
+            md_path: ./ubs-comm/docs/zh/installation_deployment.md 
           - label: UBS IO
             sections:
               - label: UBS IO BoostIO
                 href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-boostio/zh/boostio_deployment_guide.md
               - label: UBS IO MemStore
                 href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-memstore/zh/memstore_deployment_guide.md
+          - label : UBTurbo
+            href: https://atomgit.com/openeuler/ubturbo/blob/master/doc/ubturbo_installation.md
+          - label: UBS Virt
+            sections:
+              - label: virt-awaresched
+                href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-awaresched/README.md
+              - label: virt-optimizer
+                href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/build_install/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md      
+              - label: virt-enpu
+                href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/ubs-virt-enpu/README.md   
+          - label : UBS Atomic
+            href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/installation_deployment.md
+            md_path: ./ubs-atomic/doc/installation_deployment.md                              
   - label: 使用
     sections:
       - label: UB OS Component
@@ -90,7 +105,7 @@ sections:
                 href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/user_guide.md
           - label: 使用 UBS IO
             sections:
-              - label: 使用UBS IO BoostIO
+              - label: 使用 UBS IO BoostIO
                 sections:
                   - label: 接口说明
                     href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-boostio/zh/boostio_api_reference.md
@@ -98,7 +113,7 @@ sections:
                     href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-boostio/zh/boostio_configuration_guide.md
                   - label: 安全说明
                     href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-boostio/zh/boostio_security_guide.md
-              - label: 使用UBS IO MemStore
+              - label: 使用 UBS IO MemStore
                 sections:
                   - label: 接口说明
                     href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-memstore/zh/memstore_api_reference.md
@@ -106,3 +121,35 @@ sections:
                     href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-memstore/zh/memstore_configuration_guide.md
                   - label: 安全说明
                     href: https://gitcode.com/openeuler/ubs-io/blob/master/docs/ubsio-memstore/zh/memstore_security_guide.md
+          - label: 使用 UBTurbo
+            sections:
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubturbo/blob/master/doc/docapi_docs_reference.md
+              - label: 安全说明       
+                href: https://atomgit.com/openeuler/ubturbo/blob/master/doc/ubturbo_security_description.md
+              - label: 配置说明       
+                href: https://atomgit.com/openeuler/ubturbo/blob/master/doc/ubturbo_configuration_instructions.md     
+          - label: 使用 UBS Virt
+            sections:
+              - label: 使用 virt-awaresched
+                sections:
+                  - label: 接口说明
+                    href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-awaresched/docs/cli/cli_docs_reference.md
+                  - label: 配置说明
+                    href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-awaresched/docs/config/CONFIG.md
+              - label: 使用 virt-optimizer
+                sections:
+                  - label: 接口说明
+                    href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/cli/ubs-opt.md
+                  - label: 配置说明
+                    href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/config/%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.md
+                  - label: 安全说明
+                    href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/security/%E5%AE%89%E5%85%A8%E5%A3%B0%E6%98%8E.md 
+          - label: 使用 UBS Atomic
+            sections:
+              - label: 接口说明
+                href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/api_description.md
+              - label: 安全说明       
+                href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/security_instructions.md
+              - label: 配置说明       
+                href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/configuration_instructions.md                                               
