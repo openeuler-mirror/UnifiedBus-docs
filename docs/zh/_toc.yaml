@@ -21,7 +21,6 @@ sections:
             md_path: ./ubs-mem/docs/zh/installation_deployment.md
           - label : UBS Comm
             href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_installation_deployment.md
-            md_path: ./ubs-comm/docs/zh/installation_deployment.md 
           - label: UBS IO
             sections:
               - label: UBS IO BoostIO
@@ -34,10 +33,12 @@ sections:
             sections:
               - label: virt-awaresched
                 href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-awaresched/README.md
+                md_path: ./ubs-virt/virt-awaresched/README.md
               - label: virt-optimizer
-                href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/build_install/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md      
+                href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/build_install/%E9%83%A8%E7%BD%B2%E8%AF%B4%E6%98%8E.md
               - label: virt-enpu
-                href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/ubs-virt-enpu/README.md   
+                href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/ubs-virt-enpu/README.md
+                md_path: ./ubs-virt/ubs-virt-enpu/README.md
           - label : UBS Atomic
             href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/installation_deployment.md
             md_path: ./ubs-atomic/doc/installation_deployment.md                              
@@ -89,6 +90,7 @@ sections:
             sections:
               - label: 接口说明
                 href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/api_description.md
+                md_path: ./ubs-mem/docs/zh/api_description.md
               - label: 配置说明
                 href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/configuration_description.md
               - label: 安全说明
@@ -99,9 +101,9 @@ sections:
                 href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_product_description.md
               - label: 接口说明
                 href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_api_reference.md
-              - label: 安全技术介绍        
+              - label: 安全技术介绍
                 href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_security_technical_whitepaper.md  
-              - label: 用户指南       
+              - label: 用户指南
                 href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_user_guide.md
           - label: 使用 UBS IO
             sections:
@@ -125,9 +127,9 @@ sections:
             sections:
               - label: 接口说明
                 href: https://atomgit.com/openeuler/ubturbo/blob/master/doc/docapi_docs_reference.md
-              - label: 安全说明       
+              - label: 安全说明
                 href: https://atomgit.com/openeuler/ubturbo/blob/master/doc/ubturbo_security_description.md
-              - label: 配置说明       
+              - label: 配置说明
                 href: https://atomgit.com/openeuler/ubturbo/blob/master/doc/ubturbo_configuration_instructions.md     
           - label: 使用 UBS Virt
             sections:
@@ -144,12 +146,13 @@ sections:
                   - label: 配置说明
                     href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/config/%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E.md
                   - label: 安全说明
-                    href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/security/%E5%AE%89%E5%85%A8%E5%A3%B0%E6%98%8E.md 
+                    href: https://atomgit.com/openeuler/ubs-virt/blob/openEuler-24.03-LTS-SP3/virt-optimizer/docs/security/%E5%AE%89%E5%85%A8%E5%A3%B0%E6%98%8E.md
           - label: 使用 UBS Atomic
             sections:
               - label: 接口说明
                 href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/api_description.md
-              - label: 安全说明       
+                md_path: ./ubs-atomic/doc/api_description.md
+              - label: 安全说明
                 href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/security_instructions.md
-              - label: 配置说明       
-                href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/configuration_instructions.md                                               
+              - label: 配置说明
+                href: https://atomgit.com/openeuler/ubs-atomic/blob/master/doc/configuration_instructions.md
