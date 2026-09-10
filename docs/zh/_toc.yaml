@@ -17,8 +17,7 @@ sections:
           - label: UBS Engine
             href: https://atomgit.com/openeuler/ubs-engine/blob/master/docs/zh/ubse_installation.md
           - label: UBS Memory
-            href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/installation_deployment.md
-            md_path: ./ubs-mem/docs/zh/installation_deployment.md
+            href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/ubsm_installation_deployment.md
           - label : UBS Comm
             href: https://gitcode.com/openeuler/ubs-comm/blob/master/docs/zh/ubscomm_installation_deployment.md
           - label: UBS IO
@@ -89,12 +88,11 @@ sections:
           - label: 使用 UBS Memory
             sections:
               - label: 接口说明
-                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/api_description.md
-                md_path: ./ubs-mem/docs/zh/api_description.md
+                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/ubsm_api_description.md
               - label: 配置说明
-                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/configuration_description.md
+                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/ubsm_configuration_description.md
               - label: 安全说明
-                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/security_description.md
+                href: https://atomgit.com/openeuler/ubs-mem/blob/openEuler-24.03-LTS-SP3/docs/zh/ubsm_security_description.md
           - label: 使用 UBS Comm
             sections:
               - label: 产品描述
